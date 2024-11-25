@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+
+    background-color: rgba(0, 0, 0, 0.849);
+
+}
+
+.container{
+    width: 160vh;
+    height: 100vh;
+    margin-top: 50px;
+    margin-left: 100px;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.box_lists{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.box_lists h1{
+    width: max-content;
+    font-size: 32px;
+    padding: 15px;
+    color: #55D983;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    border-radius: 7px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.add_new_list{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    box-shadow: 0 0 2px white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #55D983;
+    color: black;
+}
+
+.add_new_list:hover{
+    background-color: white;
+    color: #55D983;
+    transition: ease-in-out 0.5s;
+    
+}
+
+.list_button_box{
+    box-shadow: 0 0 2px white;
+    border-radius: 5px;
+    background-color: black;
+    color: #55D983;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    height: auto;
+    border: 1px solid white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.edit_list_button{
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 1px white;
+    border-radius: 3px;
+    color: white;
+}
+
+.edit_list_button:hover{
+
+    background-color: black;
+    transition: ease-in-out 0.3s;
+    color: white;
+    cursor: pointer;
+
+}
+
+.remove_list_button{
+    width: 30px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: none;
+    color: red;
+    cursor: pointer;
+    box-shadow: 0 0 1px white;
+}
+
+.remove_list_button:hover{
+    background-color: black;
+    transition: ease-in-out 0.3s;
+}
+.list_button_box:hover {
+    background-color: #55D983;
+    color: black;
+    transform: translateY(-3px);
+    transition: ease 0.3s;
+}
+
+.list_button_box:hover .list_button{
+    cursor: pointer;
+    color: black;
+}
+
+.list_button{
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #55D983;
+    font-weight: 700;
+    font-size: large;
+}
+
+.list_button_box.active .remove_list_button{
+    box-shadow: 0 0 1px black;
+}
+
+.list_button_box.active .edit_list_button:hover{
+    color: white;
+}
+
+.list_button_box.active .edit_list_button{
+    box-shadow: 0 0 1px black;
+    color: black;
+}
+
+.list_button_box.active .list_button{
+    background-color: #55D983;
+    color: black;
+}
+
+.list_button_box.active {
+    background-color: #55D983;
+    color: black;
+}
+
+.vertical_line{
+    width: 1px;
+    height: 90%;
+    background-color: white;
+    margin-right: 50px;
+}
+
+.box_lists input{
+    font-weight: 700;
+    font-size: large;
+    min-width: 220px;
+    height: 45px;
+    background-color: black;
+    color: #55D983;
+    border: 1px solid white;
+    box-shadow: 0 0 2px white;
+    padding-left: 10px;
+}
+
+.box_lists_content{
+    width: 70%;
+    height: auto;
+    display: block;
+}
+
+.box_lists_content.active{
+    display: block;
+}
+
+
+.input_add_new_task{
+
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    outline-color: #55D983;
+    outline-width: 2px;
+    outline-style: inset;
+    margin-top: 40px;
+    box-shadow: 0 0 10px #55D983;
+    font-weight: 800;
+    border-radius: 4px;
+
+}
+
+.box_lists_content ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box_lists_content li{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #55D983;
+    border-radius: 3px;
+}
+
+.rename_task{
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: large;
+    font-weight: 700;
+}
+
+.checkbox_input{
+    width: 30px;
+    height: 15px;
+}
+
+.box_lists_content p {
+    width: 85%;
+    font-size: large;
+    font-weight: 700;
+}
+
+.remove_button_task{
+    padding: 5px 10px;
+    background-color: rgba(255, 0, 0, 0.685);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    box-sizing: 0 0 5px black;
+}
+
+.remove_button_task:hover{
+    border: 1px solid rgba(255, 0, 0, 0.685);
+    background-color: white;
+    color: rgba(255, 0, 0, 0.685);
+    transition: ease-in-out 0.2s;
+}
+
+.edit_task_button{
+    padding: 5px 10px;
+    background-color: rgba(0, 132, 255, 0.685);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    box-sizing: 0 0 5px black;
+    margin-right: 10px;
+}
+
+.edit_task_button:hover{
+    border: 1px solid rgba(0, 132, 255, 0.685);
+    background-color: white;
+    color: rgba(0, 132, 255, 0.685);
+    transition: ease-in-out 0.2s;
+}
+
+.list_content{
+    display: none;
+}
+
+.list_content.active{
+    display: block;
+}
+
+.done_tasks{
+    margin-top: 20px;
+}
+
+.done_tasks h1{
+    color: white;
+}
